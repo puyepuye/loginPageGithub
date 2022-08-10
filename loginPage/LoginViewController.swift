@@ -50,7 +50,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         } else if let textPassword = self.passWordTextField.text, textPassword.isEmpty {
             return
         }
-        self.performSegue(withIdentifier: "success", sender: self)
+        let textEmail = self.userNameTextField.text
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let viewcontroller = storyboard.instantiateViewController(withIdentifier: "ResponseViewController") as?
+            ResponseViewController { viewcontroller.textEmail = textEmail ?? ""
+            self.navigationController?.pushViewController(viewcontroller, animated: false)
+        }
+        //self.performSegue(withIdentifier: "success", sender: self)
     }
     
     @IBAction func backTapped(_ sender: Any) {
