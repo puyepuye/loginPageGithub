@@ -9,11 +9,15 @@ import UIKit
 
 class StartViewController : UIViewController {
     
+    @IBOutlet var image1: UIImageView!
+    
     @IBOutlet var image2: UIImageView!
     @IBOutlet var joinNow: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        image1.layer.cornerRadius = image1.frame.size.width / 2
+        image1.clipsToBounds = true
         image2.layer.cornerRadius = image2.frame.size.width / 2
         image2.clipsToBounds = true
     }
