@@ -510,7 +510,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pink" translatesAutoresizingMaskIntoConstraints="NO" id="fiR-L4-WRe">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="713"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="882"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJE-rH-Xcx">
                                 <rect key="frame" x="24" y="44" width="48" height="48"/>
@@ -636,6 +636,7 @@
                             <constraint firstItem="HQO-R2-C6v" firstAttribute="top" secondItem="RJE-rH-Xcx" secondAttribute="bottom" constant="30" id="drv-dy-GcU"/>
                             <constraint firstItem="RJE-rH-Xcx" firstAttribute="top" secondItem="NoB-9M-BsX" secondAttribute="top" id="eap-96-Wmh"/>
                             <constraint firstItem="fiR-L4-WRe" firstAttribute="leading" secondItem="NoB-9M-BsX" secondAttribute="leading" id="ed9-OU-HjG"/>
+                            <constraint firstItem="NoB-9M-BsX" firstAttribute="bottom" secondItem="fiR-L4-WRe" secondAttribute="bottom" constant="-40" id="kCJ-1z-bqO"/>
                             <constraint firstItem="nMe-Cy-2ZZ" firstAttribute="leading" secondItem="NoB-9M-BsX" secondAttribute="leading" constant="93" id="lGA-Dc-kNO"/>
                             <constraint firstItem="uTL-dN-XqY" firstAttribute="top" secondItem="HQO-R2-C6v" secondAttribute="bottom" constant="70" id="tO8-fB-AGM"/>
                             <constraint firstItem="NoB-9M-BsX" firstAttribute="trailing" secondItem="uTL-dN-XqY" secondAttribute="trailing" constant="23" id="wfb-q3-YeQ"/>
@@ -699,7 +700,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7sV-to-KAT"/>
+        <segue reference="3LY-cX-vsp"/>
         <segue reference="QYy-xY-wqG"/>
     </inferredMetricsTieBreakers>
     <resources>

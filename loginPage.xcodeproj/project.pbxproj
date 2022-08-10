@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0B1603EF28A3BC42008B6508 /* ResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1603EE28A3BC42008B6508 /* ResponseViewController.swift */; };
-		0B1603F128A3C5AF008B6508 /* Inder-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B1603F028A3C5AF008B6508 /* Inder-Regular.ttf */; };
 		0B3A6AD6288887CC0081F4D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AD5288887CC0081F4D8 /* SceneDelegate.swift */; };
 		0B3A6AD8288887CC0081F4D8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AD7288887CC0081F4D8 /* StartViewController.swift */; };
 		0B3A6ADB288887CC0081F4D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A6AD9288887CC0081F4D8 /* Main.storyboard */; };
@@ -50,7 +49,7 @@
 
 /* Begin PBXFileReference section */
 		0B1603EE28A3BC42008B6508 /* ResponseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseViewController.swift; sourceTree = "<group>"; };
-		0B1603F028A3C5AF008B6508 /* Inder-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inder-Regular.ttf"; sourceTree = "<group>"; };
+		0B1603F228A3CA2C008B6508 /* Sw-Inder-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Inder-Regular.ttf"; sourceTree = "<group>"; };
 		0B3A6AD0288887CC0081F4D8 /* loginPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3A6AD3288887CC0081F4D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B3A6AD5288887CC0081F4D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,7 +130,7 @@
 				0BF3D32328A0376B0069CD28 /* SignUpViewController.swift */,
 				0BE2AECC289CB92200827A79 /* LoginViewController.swift */,
 				0B1603EE28A3BC42008B6508 /* ResponseViewController.swift */,
-				0B1603F028A3C5AF008B6508 /* Inder-Regular.ttf */,
+				0B1603F228A3CA2C008B6508 /* Sw-Inder-Regular.ttf */,
 				0BF3D32B28A11A770069CD28 /* Sw-Inter-Bold.ttf */,
 				0BF3D32C28A11A770069CD28 /* Sw-Inter-ExtraBold.ttf */,
 				0BF3D32628A11A770069CD28 /* Sw-Inter-Black.ttf */,
@@ -281,7 +280,6 @@
 				0BF3D33528A11A770069CD28 /* Sw-Inter-ExtraBold.ttf in Resources */,
 				0B3A6ADB288887CC0081F4D8 /* Main.storyboard in Resources */,
 				0BF3D33228A11A770069CD28 /* Sw-Inter-Thin.ttf in Resources */,
-				0B1603F128A3C5AF008B6508 /* Inder-Regular.ttf in Resources */,
 				0BF3D33028A11A770069CD28 /* Sw-Inter-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
