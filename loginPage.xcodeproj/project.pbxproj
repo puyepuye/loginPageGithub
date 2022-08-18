@@ -16,6 +16,8 @@
 		0B3A6AEB288887CD0081F4D8 /* loginPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AEA288887CD0081F4D8 /* loginPageTests.swift */; };
 		0B3A6AF5288887CD0081F4D8 /* loginPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AF4288887CD0081F4D8 /* loginPageUITests.swift */; };
 		0B3A6AF7288887CD0081F4D8 /* loginPageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AF6288887CD0081F4D8 /* loginPageUITestsLaunchTests.swift */; };
+		0BC6F19B28ACC88F004917AB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6F19A28ACC88F004917AB /* CustomTableViewCell.swift */; };
+		0BC6F19D28ACCE8A004917AB /* StreamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6F19C28ACCE8A004917AB /* StreamingViewController.swift */; };
 		0BCF2498289D155E00CD99B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AD3288887CC0081F4D8 /* AppDelegate.swift */; };
 		0BE2AECD289CB92200827A79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE2AECC289CB92200827A79 /* LoginViewController.swift */; };
 		0BF3D32428A0376B0069CD28 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3D32328A0376B0069CD28 /* SignUpViewController.swift */; };
@@ -63,6 +65,8 @@
 		0B3A6AF0288887CD0081F4D8 /* loginPageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginPageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3A6AF4288887CD0081F4D8 /* loginPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageUITests.swift; sourceTree = "<group>"; };
 		0B3A6AF6288887CD0081F4D8 /* loginPageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0BC6F19A28ACC88F004917AB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		0BC6F19C28ACCE8A004917AB /* StreamingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingViewController.swift; sourceTree = "<group>"; };
 		0BE2AECC289CB92200827A79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0BF3D32328A0376B0069CD28 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0BF3D32528A11A770069CD28 /* Sw-Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Inter-Medium.ttf"; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 				0B1603EE28A3BC42008B6508 /* ResponseViewController.swift */,
 				0B1603F228A3CA2C008B6508 /* Sw-Inder-Regular.ttf */,
 				0BF3D32B28A11A770069CD28 /* Sw-Inter-Bold.ttf */,
+				0BC6F19C28ACCE8A004917AB /* StreamingViewController.swift */,
 				0BF3D32C28A11A770069CD28 /* Sw-Inter-ExtraBold.ttf */,
 				0BF3D32628A11A770069CD28 /* Sw-Inter-Black.ttf */,
 				0BF3D32728A11A770069CD28 /* Sw-Inter-ExtraLight.ttf */,
@@ -144,6 +149,7 @@
 				0B3A6ADC288887CC0081F4D8 /* Assets.xcassets */,
 				0B3A6ADE288887CC0081F4D8 /* LaunchScreen.storyboard */,
 				0B3A6AE1288887CC0081F4D8 /* Info.plist */,
+				0BC6F19A28ACC88F004917AB /* CustomTableViewCell.swift */,
 			);
 			path = loginPage;
 			sourceTree = "<group>";
@@ -306,7 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF3D32428A0376B0069CD28 /* SignUpViewController.swift in Sources */,
+				0BC6F19D28ACCE8A004917AB /* StreamingViewController.swift in Sources */,
 				0B1603EF28A3BC42008B6508 /* ResponseViewController.swift in Sources */,
+				0BC6F19B28ACC88F004917AB /* CustomTableViewCell.swift in Sources */,
 				0BE2AECD289CB92200827A79 /* LoginViewController.swift in Sources */,
 				0B3A6AD8288887CC0081F4D8 /* StartViewController.swift in Sources */,
 				0B3A6AD6288887CC0081F4D8 /* SceneDelegate.swift in Sources */,
