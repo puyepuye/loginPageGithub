@@ -4,7 +4,11 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Sw-Proxima-Nova</string>
 		<string>Sw-Inder-Regular</string>
+		<string>Sw-Poppins-Medium</string>
+		<string>Sw-Poppins-SemiBold</string>
+		<string>Sw-Poppins-Regular</string>
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string></string>

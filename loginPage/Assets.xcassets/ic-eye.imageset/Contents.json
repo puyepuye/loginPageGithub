@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "bg.png",
+      "filename" : "ic-eye.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "bg@2x.png",
+      "filename" : "ic-eye@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "bg@3x.png",
+      "filename" : "ic-eye@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

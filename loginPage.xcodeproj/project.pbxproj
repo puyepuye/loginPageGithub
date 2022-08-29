@@ -16,9 +16,15 @@
 		0B3A6AEB288887CD0081F4D8 /* loginPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AEA288887CD0081F4D8 /* loginPageTests.swift */; };
 		0B3A6AF5288887CD0081F4D8 /* loginPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AF4288887CD0081F4D8 /* loginPageUITests.swift */; };
 		0B3A6AF7288887CD0081F4D8 /* loginPageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AF6288887CD0081F4D8 /* loginPageUITestsLaunchTests.swift */; };
+		0B8CD3D928B68AE8006ACD8F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0B8CD3D828B68AE8006ACD8F /* Kingfisher */; };
+		0B8CD3DC28B68CB4006ACD8F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0B8CD3DB28B68CB4006ACD8F /* Kingfisher */; };
 		0BC6F19B28ACC88F004917AB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6F19A28ACC88F004917AB /* CustomTableViewCell.swift */; };
 		0BC6F19D28ACCE8A004917AB /* StreamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6F19C28ACCE8A004917AB /* StreamingViewController.swift */; };
 		0BCF2498289D155E00CD99B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AD3288887CC0081F4D8 /* AppDelegate.swift */; };
+		0BCFAEE028B2B12F00218CB5 /* Sw-Proxima-Nova.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFAEDF28B2B12F00218CB5 /* Sw-Proxima-Nova.otf */; };
+		0BCFAEE228B2B25700218CB5 /* Sw-Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFAEE128B2B25700218CB5 /* Sw-Poppins-Regular.ttf */; };
+		0BCFAEE428B2B26200218CB5 /* Sw-Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFAEE328B2B26200218CB5 /* Sw-Poppins-SemiBold.ttf */; };
+		0BCFAEE628B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFAEE528B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf */; };
 		0BE2AECD289CB92200827A79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE2AECC289CB92200827A79 /* LoginViewController.swift */; };
 		0BF3D32428A0376B0069CD28 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3D32328A0376B0069CD28 /* SignUpViewController.swift */; };
 		0BF3D32E28A11A770069CD28 /* Sw-Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3D32528A11A770069CD28 /* Sw-Inter-Medium.ttf */; };
@@ -67,6 +73,10 @@
 		0B3A6AF6288887CD0081F4D8 /* loginPageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0BC6F19A28ACC88F004917AB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		0BC6F19C28ACCE8A004917AB /* StreamingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingViewController.swift; sourceTree = "<group>"; };
+		0BCFAEDF28B2B12F00218CB5 /* Sw-Proxima-Nova.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Proxima-Nova.otf"; sourceTree = "<group>"; };
+		0BCFAEE128B2B25700218CB5 /* Sw-Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		0BCFAEE328B2B26200218CB5 /* Sw-Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		0BCFAEE528B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		0BE2AECC289CB92200827A79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0BF3D32328A0376B0069CD28 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0BF3D32528A11A770069CD28 /* Sw-Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Inter-Medium.ttf"; sourceTree = "<group>"; };
@@ -85,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8CD3DC28B68CB4006ACD8F /* Kingfisher in Frameworks */,
+				0B8CD3D928B68AE8006ACD8F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +152,11 @@
 				0BF3D32C28A11A770069CD28 /* Sw-Inter-ExtraBold.ttf */,
 				0BF3D32628A11A770069CD28 /* Sw-Inter-Black.ttf */,
 				0BF3D32728A11A770069CD28 /* Sw-Inter-ExtraLight.ttf */,
+				0BCFAEE528B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf */,
+				0BCFAEE328B2B26200218CB5 /* Sw-Poppins-SemiBold.ttf */,
+				0BCFAEE128B2B25700218CB5 /* Sw-Poppins-Regular.ttf */,
 				0B3A6AD9288887CC0081F4D8 /* Main.storyboard */,
+				0BCFAEDF28B2B12F00218CB5 /* Sw-Proxima-Nova.otf */,
 				0BF3D32A28A11A770069CD28 /* Sw-Inter-Light.ttf */,
 				0BF3D32528A11A770069CD28 /* Sw-Inter-Medium.ttf */,
 				0BF3D32D28A11A770069CD28 /* Sw-Inter-Regular.ttf */,
@@ -187,6 +203,10 @@
 			dependencies = (
 			);
 			name = loginPage;
+			packageProductDependencies = (
+				0B8CD3D828B68AE8006ACD8F /* Kingfisher */,
+				0B8CD3DB28B68CB4006ACD8F /* Kingfisher */,
+			);
 			productName = loginPage;
 			productReference = 0B3A6AD0288887CC0081F4D8 /* loginPage.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +279,10 @@
 				Base,
 			);
 			mainGroup = 0B3A6AC7288887CC0081F4D8;
+			packageReferences = (
+				0B8CD3D728B68AE8006ACD8F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				0B8CD3DA28B68CB4006ACD8F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 0B3A6AD1288887CC0081F4D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -278,15 +302,19 @@
 				0BF3D32F28A11A770069CD28 /* Sw-Inter-Black.ttf in Resources */,
 				0B3A6AE0288887CC0081F4D8 /* LaunchScreen.storyboard in Resources */,
 				0B3A6ADD288887CC0081F4D8 /* Assets.xcassets in Resources */,
+				0BCFAEE028B2B12F00218CB5 /* Sw-Proxima-Nova.otf in Resources */,
+				0BCFAEE428B2B26200218CB5 /* Sw-Poppins-SemiBold.ttf in Resources */,
 				0BF3D33328A11A770069CD28 /* Sw-Inter-Light.ttf in Resources */,
 				0BF3D33628A11A770069CD28 /* Sw-Inter-Regular.ttf in Resources */,
 				0BF3D33128A11A770069CD28 /* Sw-Inter-SemiBold.ttf in Resources */,
+				0BCFAEE228B2B25700218CB5 /* Sw-Poppins-Regular.ttf in Resources */,
 				0BF3D32E28A11A770069CD28 /* Sw-Inter-Medium.ttf in Resources */,
 				0BF3D33428A11A770069CD28 /* Sw-Inter-Bold.ttf in Resources */,
 				0BF3D33528A11A770069CD28 /* Sw-Inter-ExtraBold.ttf in Resources */,
 				0B3A6ADB288887CC0081F4D8 /* Main.storyboard in Resources */,
 				0BF3D33228A11A770069CD28 /* Sw-Inter-Thin.ttf in Resources */,
 				0BF3D33028A11A770069CD28 /* Sw-Inter-ExtraLight.ttf in Resources */,
+				0BCFAEE628B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +690,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B8CD3D728B68AE8006ACD8F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		0B8CD3DA28B68CB4006ACD8F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B8CD3D828B68AE8006ACD8F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B8CD3D728B68AE8006ACD8F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		0B8CD3DB28B68CB4006ACD8F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B8CD3D728B68AE8006ACD8F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B3A6AC8288887CC0081F4D8 /* Project object */;
 }

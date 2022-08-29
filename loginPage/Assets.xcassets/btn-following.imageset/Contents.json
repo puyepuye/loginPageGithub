@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "bg.png",
+      "filename" : "btn-following.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "bg@2x.png",
+      "filename" : "btn-following@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "bg@3x.png",
+      "filename" : "btn-following@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
