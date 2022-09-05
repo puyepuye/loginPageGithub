@@ -36,6 +36,9 @@
 		0BF3D33428A11A770069CD28 /* Sw-Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3D32B28A11A770069CD28 /* Sw-Inter-Bold.ttf */; };
 		0BF3D33528A11A770069CD28 /* Sw-Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3D32C28A11A770069CD28 /* Sw-Inter-ExtraBold.ttf */; };
 		0BF3D33628A11A770069CD28 /* Sw-Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3D32D28A11A770069CD28 /* Sw-Inter-Regular.ttf */; };
+		0BFBAB2528C4FE6200ABCD67 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBAB2428C4FE6200ABCD67 /* RankingViewController.swift */; };
+		0BFBAB2828C5020D00ABCD67 /* RankingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBAB2628C5020D00ABCD67 /* RankingCollectionViewCell.swift */; };
+		0BFBAB2928C5020D00ABCD67 /* RankingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFBAB2728C5020D00ABCD67 /* RankingCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,9 @@
 		0BF3D32B28A11A770069CD28 /* Sw-Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Inter-Bold.ttf"; sourceTree = "<group>"; };
 		0BF3D32C28A11A770069CD28 /* Sw-Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
 		0BF3D32D28A11A770069CD28 /* Sw-Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Inter-Regular.ttf"; sourceTree = "<group>"; };
+		0BFBAB2428C4FE6200ABCD67 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		0BFBAB2628C5020D00ABCD67 /* RankingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCollectionViewCell.swift; sourceTree = "<group>"; };
+		0BFBAB2728C5020D00ABCD67 /* RankingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,10 @@
 				0BCFAEE528B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf */,
 				0BCFAEE328B2B26200218CB5 /* Sw-Poppins-SemiBold.ttf */,
 				0BCFAEE128B2B25700218CB5 /* Sw-Poppins-Regular.ttf */,
+				0BFBAB2428C4FE6200ABCD67 /* RankingViewController.swift */,
+				0B3A6ADC288887CC0081F4D8 /* Assets.xcassets */,
+				0BFBAB2628C5020D00ABCD67 /* RankingCollectionViewCell.swift */,
+				0BFBAB2728C5020D00ABCD67 /* RankingCollectionViewCell.xib */,
 				0B3A6AD9288887CC0081F4D8 /* Main.storyboard */,
 				0BCFAEDF28B2B12F00218CB5 /* Sw-Proxima-Nova.otf */,
 				0BF3D32A28A11A770069CD28 /* Sw-Inter-Light.ttf */,
@@ -162,7 +172,6 @@
 				0BF3D32D28A11A770069CD28 /* Sw-Inter-Regular.ttf */,
 				0BF3D32828A11A770069CD28 /* Sw-Inter-SemiBold.ttf */,
 				0BF3D32928A11A770069CD28 /* Sw-Inter-Thin.ttf */,
-				0B3A6ADC288887CC0081F4D8 /* Assets.xcassets */,
 				0B3A6ADE288887CC0081F4D8 /* LaunchScreen.storyboard */,
 				0B3A6AE1288887CC0081F4D8 /* Info.plist */,
 				0BC6F19A28ACC88F004917AB /* CustomTableViewCell.swift */,
@@ -314,6 +323,7 @@
 				0B3A6ADB288887CC0081F4D8 /* Main.storyboard in Resources */,
 				0BF3D33228A11A770069CD28 /* Sw-Inter-Thin.ttf in Resources */,
 				0BF3D33028A11A770069CD28 /* Sw-Inter-ExtraLight.ttf in Resources */,
+				0BFBAB2928C5020D00ABCD67 /* RankingCollectionViewCell.xib in Resources */,
 				0BCFAEE628B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,9 +354,11 @@
 				0B1603EF28A3BC42008B6508 /* ResponseViewController.swift in Sources */,
 				0BC6F19B28ACC88F004917AB /* CustomTableViewCell.swift in Sources */,
 				0BE2AECD289CB92200827A79 /* LoginViewController.swift in Sources */,
+				0BFBAB2828C5020D00ABCD67 /* RankingCollectionViewCell.swift in Sources */,
 				0B3A6AD8288887CC0081F4D8 /* StartViewController.swift in Sources */,
 				0B3A6AD6288887CC0081F4D8 /* SceneDelegate.swift in Sources */,
 				0BCF2498289D155E00CD99B8 /* AppDelegate.swift in Sources */,
+				0BFBAB2528C4FE6200ABCD67 /* RankingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
