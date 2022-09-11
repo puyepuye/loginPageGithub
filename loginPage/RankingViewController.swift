@@ -16,8 +16,14 @@ class RankingViewController: UIViewController{
     
     let data: [Celldata] = [
         Celldata(title: "Call of Duty", backgroundImage: "callOfDuty"),
-        Celldata(title: "FortNite", backgroundImage: "callOfDuty"),
-        Celldata(title: "DearHelpGod", backgroundImage: "callOfDuty"),
+        Celldata(title: "FortNite", backgroundImage: "elephantLogo2"),
+        Celldata(title: "DearHelpGod", backgroundImage: "elephantLogo2"),
+        Celldata(title: "DearHelpGod", backgroundImage: "elephantLogo2"),
+        Celldata(title: "DearHelpGod", backgroundImage: "elephantLogo2"),
+        Celldata(title: "DearHelpGod", backgroundImage: "elephantLogo2"),
+        Celldata(title: "DearHelpGod", backgroundImage: "elephantLogo2"),
+        Celldata(title: "DearHelpGod", backgroundImage: "elephantLogo2"),
+        Celldata(title: "DearHelpGod", backgroundImage: "elephantLogo2"),
     
     ]
     override func viewDidLoad() {
@@ -34,6 +40,7 @@ class RankingViewController: UIViewController{
         // Do any additional setup after loading the view.
     }
     
+    
 }
 
 extension RankingViewController: UICollectionViewDelegate {
@@ -46,10 +53,13 @@ extension RankingViewController: UICollectionViewDataSource {
         return data.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let data = data[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RankingCollectionViewCell.identifier, for: indexPath) as! RankingCollectionViewCell
-        cell.data = self.data[indexPath.row]
+        //cell.data = self.data[indexPath.row]
         //cell.configure(with: UIImage(named: "background")!)
+        cell.imageView.image = UIImage(named: data.backgroundImage)
         return cell
+        
     }
     
 }
@@ -63,23 +73,11 @@ extension RankingViewController: UICollectionViewDelegateFlowLayout {
 
 class RankingCollectionViewCell: UICollectionViewCell {
     @IBOutlet var imageView: UIImageView!
-    
-    var data: Celldata?{
-        didSet{
-            guard let data = data else { return }
-            bg.image = data.backgroundImage
-            //bg.image = data.backgroundImage
-            
-        }
-    }
-    
+
     static let identifier = "RankingCollectionViewCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
-    }
-    public func configure(with image: UIImage) {
-        imageView.image = image
     }
     static func nib() -> UINib{
         return UINib(nibName: "RankingCollectionViewCell", bundle: nil)
