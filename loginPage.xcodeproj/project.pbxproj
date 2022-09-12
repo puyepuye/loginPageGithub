@@ -26,6 +26,8 @@
 		0BCFAEE428B2B26200218CB5 /* Sw-Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFAEE328B2B26200218CB5 /* Sw-Poppins-SemiBold.ttf */; };
 		0BCFAEE628B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFAEE528B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf */; };
 		0BE2AECD289CB92200827A79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE2AECC289CB92200827A79 /* LoginViewController.swift */; };
+		0BF2A3ED28CE10FC00BDA84C /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2A3EC28CE10FC00BDA84C /* helper.swift */; };
+		0BF2A3F028CECFC500BDA84C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2A3EF28CECFC500BDA84C /* CollectionViewCell.swift */; };
 		0BF3D32428A0376B0069CD28 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3D32328A0376B0069CD28 /* SignUpViewController.swift */; };
 		0BF3D32E28A11A770069CD28 /* Sw-Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3D32528A11A770069CD28 /* Sw-Inter-Medium.ttf */; };
 		0BF3D32F28A11A770069CD28 /* Sw-Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3D32628A11A770069CD28 /* Sw-Inter-Black.ttf */; };
@@ -37,8 +39,6 @@
 		0BF3D33528A11A770069CD28 /* Sw-Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3D32C28A11A770069CD28 /* Sw-Inter-ExtraBold.ttf */; };
 		0BF3D33628A11A770069CD28 /* Sw-Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3D32D28A11A770069CD28 /* Sw-Inter-Regular.ttf */; };
 		0BFBAB2528C4FE6200ABCD67 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBAB2428C4FE6200ABCD67 /* RankingViewController.swift */; };
-		0BFBAB2828C5020D00ABCD67 /* RankingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBAB2628C5020D00ABCD67 /* RankingCollectionViewCell.swift */; };
-		0BFBAB2928C5020D00ABCD67 /* RankingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFBAB2728C5020D00ABCD67 /* RankingCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +81,8 @@
 		0BCFAEE328B2B26200218CB5 /* Sw-Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		0BCFAEE528B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		0BE2AECC289CB92200827A79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0BF2A3EC28CE10FC00BDA84C /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		0BF2A3EF28CECFC500BDA84C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		0BF3D32328A0376B0069CD28 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0BF3D32528A11A770069CD28 /* Sw-Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Inter-Medium.ttf"; sourceTree = "<group>"; };
 		0BF3D32628A11A770069CD28 /* Sw-Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Inter-Black.ttf"; sourceTree = "<group>"; };
@@ -92,8 +94,6 @@
 		0BF3D32C28A11A770069CD28 /* Sw-Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
 		0BF3D32D28A11A770069CD28 /* Sw-Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Inter-Regular.ttf"; sourceTree = "<group>"; };
 		0BFBAB2428C4FE6200ABCD67 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
-		0BFBAB2628C5020D00ABCD67 /* RankingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCollectionViewCell.swift; sourceTree = "<group>"; };
-		0BFBAB2728C5020D00ABCD67 /* RankingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,35 +146,22 @@
 		0B3A6AD2288887CC0081F4D8 /* loginPage */ = {
 			isa = PBXGroup;
 			children = (
+				0BF2A3EE28CEC96800BDA84C /* Fonts */,
 				0B3A6AD3288887CC0081F4D8 /* AppDelegate.swift */,
 				0B3A6AD5288887CC0081F4D8 /* SceneDelegate.swift */,
 				0B3A6AD7288887CC0081F4D8 /* StartViewController.swift */,
 				0BF3D32328A0376B0069CD28 /* SignUpViewController.swift */,
 				0BE2AECC289CB92200827A79 /* LoginViewController.swift */,
 				0B1603EE28A3BC42008B6508 /* ResponseViewController.swift */,
-				0B1603F228A3CA2C008B6508 /* Sw-Inder-Regular.ttf */,
-				0BF3D32B28A11A770069CD28 /* Sw-Inter-Bold.ttf */,
 				0BC6F19C28ACCE8A004917AB /* StreamingViewController.swift */,
-				0BF3D32C28A11A770069CD28 /* Sw-Inter-ExtraBold.ttf */,
-				0BF3D32628A11A770069CD28 /* Sw-Inter-Black.ttf */,
-				0BF3D32728A11A770069CD28 /* Sw-Inter-ExtraLight.ttf */,
-				0BCFAEE528B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf */,
-				0BCFAEE328B2B26200218CB5 /* Sw-Poppins-SemiBold.ttf */,
-				0BCFAEE128B2B25700218CB5 /* Sw-Poppins-Regular.ttf */,
 				0BFBAB2428C4FE6200ABCD67 /* RankingViewController.swift */,
+				0BF2A3EF28CECFC500BDA84C /* CollectionViewCell.swift */,
 				0B3A6ADC288887CC0081F4D8 /* Assets.xcassets */,
-				0BFBAB2628C5020D00ABCD67 /* RankingCollectionViewCell.swift */,
-				0BFBAB2728C5020D00ABCD67 /* RankingCollectionViewCell.xib */,
 				0B3A6AD9288887CC0081F4D8 /* Main.storyboard */,
-				0BCFAEDF28B2B12F00218CB5 /* Sw-Proxima-Nova.otf */,
-				0BF3D32A28A11A770069CD28 /* Sw-Inter-Light.ttf */,
-				0BF3D32528A11A770069CD28 /* Sw-Inter-Medium.ttf */,
-				0BF3D32D28A11A770069CD28 /* Sw-Inter-Regular.ttf */,
-				0BF3D32828A11A770069CD28 /* Sw-Inter-SemiBold.ttf */,
-				0BF3D32928A11A770069CD28 /* Sw-Inter-Thin.ttf */,
 				0B3A6ADE288887CC0081F4D8 /* LaunchScreen.storyboard */,
 				0B3A6AE1288887CC0081F4D8 /* Info.plist */,
 				0BC6F19A28ACC88F004917AB /* CustomTableViewCell.swift */,
+				0BF2A3EC28CE10FC00BDA84C /* helper.swift */,
 			);
 			path = loginPage;
 			sourceTree = "<group>";
@@ -194,6 +181,27 @@
 				0B3A6AF6288887CD0081F4D8 /* loginPageUITestsLaunchTests.swift */,
 			);
 			path = loginPageUITests;
+			sourceTree = "<group>";
+		};
+		0BF2A3EE28CEC96800BDA84C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0B1603F228A3CA2C008B6508 /* Sw-Inder-Regular.ttf */,
+				0BF3D32B28A11A770069CD28 /* Sw-Inter-Bold.ttf */,
+				0BF3D32C28A11A770069CD28 /* Sw-Inter-ExtraBold.ttf */,
+				0BF3D32628A11A770069CD28 /* Sw-Inter-Black.ttf */,
+				0BF3D32728A11A770069CD28 /* Sw-Inter-ExtraLight.ttf */,
+				0BCFAEE528B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf */,
+				0BCFAEE328B2B26200218CB5 /* Sw-Poppins-SemiBold.ttf */,
+				0BCFAEE128B2B25700218CB5 /* Sw-Poppins-Regular.ttf */,
+				0BCFAEDF28B2B12F00218CB5 /* Sw-Proxima-Nova.otf */,
+				0BF3D32A28A11A770069CD28 /* Sw-Inter-Light.ttf */,
+				0BF3D32528A11A770069CD28 /* Sw-Inter-Medium.ttf */,
+				0BF3D32D28A11A770069CD28 /* Sw-Inter-Regular.ttf */,
+				0BF3D32828A11A770069CD28 /* Sw-Inter-SemiBold.ttf */,
+				0BF3D32928A11A770069CD28 /* Sw-Inter-Thin.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,7 +331,6 @@
 				0B3A6ADB288887CC0081F4D8 /* Main.storyboard in Resources */,
 				0BF3D33228A11A770069CD28 /* Sw-Inter-Thin.ttf in Resources */,
 				0BF3D33028A11A770069CD28 /* Sw-Inter-ExtraLight.ttf in Resources */,
-				0BFBAB2928C5020D00ABCD67 /* RankingCollectionViewCell.xib in Resources */,
 				0BCFAEE628B2B2CF00218CB5 /* Sw-Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,13 +359,14 @@
 				0BF3D32428A0376B0069CD28 /* SignUpViewController.swift in Sources */,
 				0BC6F19D28ACCE8A004917AB /* StreamingViewController.swift in Sources */,
 				0B1603EF28A3BC42008B6508 /* ResponseViewController.swift in Sources */,
+				0BF2A3ED28CE10FC00BDA84C /* helper.swift in Sources */,
 				0BC6F19B28ACC88F004917AB /* CustomTableViewCell.swift in Sources */,
 				0BE2AECD289CB92200827A79 /* LoginViewController.swift in Sources */,
-				0BFBAB2828C5020D00ABCD67 /* RankingCollectionViewCell.swift in Sources */,
 				0B3A6AD8288887CC0081F4D8 /* StartViewController.swift in Sources */,
 				0B3A6AD6288887CC0081F4D8 /* SceneDelegate.swift in Sources */,
 				0BCF2498289D155E00CD99B8 /* AppDelegate.swift in Sources */,
 				0BFBAB2528C4FE6200ABCD67 /* RankingViewController.swift in Sources */,
+				0BF2A3F028CECFC500BDA84C /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
