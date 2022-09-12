@@ -28,6 +28,8 @@
 		0BE2AECD289CB92200827A79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE2AECC289CB92200827A79 /* LoginViewController.swift */; };
 		0BF2A3ED28CE10FC00BDA84C /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2A3EC28CE10FC00BDA84C /* helper.swift */; };
 		0BF2A3F028CECFC500BDA84C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2A3EF28CECFC500BDA84C /* CollectionViewCell.swift */; };
+		0BF2A3F228CEE08800BDA84C /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2A3F128CEE08800BDA84C /* LiveViewController.swift */; };
+		0BF2A3F428CEE10D00BDA84C /* LiveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2A3F328CEE10D00BDA84C /* LiveCollectionViewCell.swift */; };
 		0BF3D32428A0376B0069CD28 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3D32328A0376B0069CD28 /* SignUpViewController.swift */; };
 		0BF3D32E28A11A770069CD28 /* Sw-Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3D32528A11A770069CD28 /* Sw-Inter-Medium.ttf */; };
 		0BF3D32F28A11A770069CD28 /* Sw-Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3D32628A11A770069CD28 /* Sw-Inter-Black.ttf */; };
@@ -83,6 +85,8 @@
 		0BE2AECC289CB92200827A79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0BF2A3EC28CE10FC00BDA84C /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
 		0BF2A3EF28CECFC500BDA84C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		0BF2A3F128CEE08800BDA84C /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		0BF2A3F328CEE10D00BDA84C /* LiveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCollectionViewCell.swift; sourceTree = "<group>"; };
 		0BF3D32328A0376B0069CD28 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0BF3D32528A11A770069CD28 /* Sw-Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Inter-Medium.ttf"; sourceTree = "<group>"; };
 		0BF3D32628A11A770069CD28 /* Sw-Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Inter-Black.ttf"; sourceTree = "<group>"; };
@@ -155,8 +159,10 @@
 				0B1603EE28A3BC42008B6508 /* ResponseViewController.swift */,
 				0BC6F19C28ACCE8A004917AB /* StreamingViewController.swift */,
 				0BFBAB2428C4FE6200ABCD67 /* RankingViewController.swift */,
+				0BF2A3F328CEE10D00BDA84C /* LiveCollectionViewCell.swift */,
 				0BF2A3EF28CECFC500BDA84C /* CollectionViewCell.swift */,
 				0B3A6ADC288887CC0081F4D8 /* Assets.xcassets */,
+				0BF2A3F128CEE08800BDA84C /* LiveViewController.swift */,
 				0B3A6AD9288887CC0081F4D8 /* Main.storyboard */,
 				0B3A6ADE288887CC0081F4D8 /* LaunchScreen.storyboard */,
 				0B3A6AE1288887CC0081F4D8 /* Info.plist */,
@@ -361,11 +367,13 @@
 				0B1603EF28A3BC42008B6508 /* ResponseViewController.swift in Sources */,
 				0BF2A3ED28CE10FC00BDA84C /* helper.swift in Sources */,
 				0BC6F19B28ACC88F004917AB /* CustomTableViewCell.swift in Sources */,
+				0BF2A3F428CEE10D00BDA84C /* LiveCollectionViewCell.swift in Sources */,
 				0BE2AECD289CB92200827A79 /* LoginViewController.swift in Sources */,
 				0B3A6AD8288887CC0081F4D8 /* StartViewController.swift in Sources */,
 				0B3A6AD6288887CC0081F4D8 /* SceneDelegate.swift in Sources */,
 				0BCF2498289D155E00CD99B8 /* AppDelegate.swift in Sources */,
 				0BFBAB2528C4FE6200ABCD67 /* RankingViewController.swift in Sources */,
+				0BF2A3F228CEE08800BDA84C /* LiveViewController.swift in Sources */,
 				0BF2A3F028CECFC500BDA84C /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

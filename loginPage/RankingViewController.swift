@@ -8,8 +8,10 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
     
     var imageArrayA = [UIImage(named:"elephantLogo2"), UIImage(named:"elephantLogo2"), UIImage(named:"elephantLogo2")]
     var imageArrayB = [UIImage(named:"elephantLogo2"), UIImage(named:"elephantLogo2"), UIImage(named:"elephantLogo2")]
+    var imageArrayC = [UIImage(named:"elephantLogo2"), UIImage(named:"elephantLogo2"), UIImage(named:"elephantLogo2")]
     @IBOutlet weak var collectionViewA: UICollectionView!
     @IBOutlet weak var collectionViewB: UICollectionView!
+    @IBOutlet weak var collectionViewC: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,14 +19,18 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
         collectionViewA.dataSource = self
         collectionViewB.delegate = self
         collectionViewB.dataSource = self
+        collectionViewC.delegate = self
+        collectionViewC.dataSource = self
         
         //register
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
          if collectionView == self.collectionViewA {
            return imageArrayA.count
-         } else {
+         } else if collectionView == self.collectionViewB {
            return imageArrayB.count
+         } else {
+             return imageArrayC.count
          }
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -34,10 +40,14 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
             cellA.imageA.image = imageArrayA[indexPath.row]
             //cellA.
             return cellA
-        } else {
+        } else if collectionView == self.collectionViewB {
             let cellB = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
             cellB.imageB.image = imageArrayB[indexPath.row]
             return cellB
+        } else {
+            let cellC = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+            cellC.imageC.image = imageArrayB[indexPath.row]
+            return cellC
         }
     }
     
