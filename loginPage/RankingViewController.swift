@@ -13,6 +13,8 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var collectionViewB: UICollectionView!
     @IBOutlet weak var collectionViewC: UICollectionView!
     @IBOutlet weak var bigView: UIView!
+    @IBOutlet weak var yellowButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,8 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
 
         bigView.layer.insertSublayer(gradient, at: 0)
         //regist
+        
+        //yellowButton.layer.borderColor = UIColor.blue.cgColor
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
          if collectionView == self.collectionViewA {
