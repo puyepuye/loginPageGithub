@@ -6,12 +6,13 @@ struct Celldata {
 }
 class RankingViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var imageArrayA = [UIImage(named:"elephantLogo2"), UIImage(named:"elephantLogo2"), UIImage(named:"elephantLogo2")]
-    var imageArrayB = [UIImage(named:"elephantLogo2"), UIImage(named:"elephantLogo2"), UIImage(named:"elephantLogo2")]
-    var imageArrayC = [UIImage(named:"elephantLogo2"), UIImage(named:"elephantLogo2"), UIImage(named:"elephantLogo2")]
+    var imageArrayA = [UIImage(named:"game1"), UIImage(named:"game2"), UIImage(named:"game3"), UIImage(named:"game1"), UIImage(named:"game2"), UIImage(named:"game3")]
+    var imageArrayB = [UIImage(named:"achievement1"), UIImage(named:"achievement2"), UIImage(named:"achievement1"),UIImage(named:"achievement2")]
+    var imageArrayC = [UIImage(named:"team1"), UIImage(named:"team2"), UIImage(named:"team3"), UIImage(named:"team4"), UIImage(named:"team5"), UIImage(named:"team1"), UIImage(named:"team2"), UIImage(named:"team3")]
     @IBOutlet weak var collectionViewA: UICollectionView!
     @IBOutlet weak var collectionViewB: UICollectionView!
     @IBOutlet weak var collectionViewC: UICollectionView!
+    @IBOutlet weak var bigView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,15 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
         collectionViewC.delegate = self
         collectionViewC.dataSource = self
         
-        //register
+        //bigView.backgroundColor = UIColor.black
+        //display
+        
+        let gradient = CAGradientLayer()
+        gradient.frame = view.bounds
+        gradient.colors = [UIColor.black.cgColor, UIColor.darkGray.cgColor]
+
+        bigView.layer.insertSublayer(gradient, at: 0)
+        //regist
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
          if collectionView == self.collectionViewA {
@@ -46,7 +55,7 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
             return cellB
         } else {
             let cellC = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
-            cellC.imageC.image = imageArrayB[indexPath.row]
+            cellC.imageC.image = imageArrayC[indexPath.row]
             return cellC
         }
     }
