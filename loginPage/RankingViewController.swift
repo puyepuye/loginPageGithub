@@ -1,4 +1,5 @@
 import UIKit
+import Kingfisher
 
 struct Celldata {
     let title: String
@@ -51,6 +52,8 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
             //let data = data[indexPath.row]
             let cellA = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
             cellA.imageA.image = imageArrayA[indexPath.row]
+            //cellA.imageA.kf.indicatorType = .activity
+            //cellA.imageA.kf.setImage(with: URL(string: "https://images7.alphacoders.com/472/thumb-1920-472347.jpg"), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
             //cellA.
             return cellA
         } else if collectionView == self.collectionViewB {
