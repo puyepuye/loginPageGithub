@@ -7,7 +7,8 @@ struct Celldata {
 }
 class RankingViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var imageArrayA = [UIImage(named:"game1"), UIImage(named:"game2"), UIImage(named:"game3"), UIImage(named:"game1"), UIImage(named:"game2"), UIImage(named:"game3")]
+    //var imageArrayA = ["https://images7.alphacoders.com/472/thumb-1920-472347.jpg", URL(string: "https://www.pbs.org/wnet/nature/files/2021/05/frog-1280x720.png"), URL(string: "https://images7.alphacoders.com/472/thumb-1920-472347.jpg"), URL(string: "https://images7.alphacoders.com/472/thumb-1920-472347.jpg")]
+    var imageArrayA = ["https://www.kmids.ac.th/wp-content/uploads/2021/10/PR.jpg","https://images7.alphacoders.com/472/thumb-1920-472347.jpg","https://images7.alphacoders.com/472/thumb-1920-472347.jpg"]
     var imageArrayB = [UIImage(named:"achievement1"), UIImage(named:"achievement2"), UIImage(named:"achievement1"),UIImage(named:"achievement2")]
     var imageArrayC = [UIImage(named:"team1"), UIImage(named:"team2"), UIImage(named:"team3"), UIImage(named:"team4"), UIImage(named:"team5"), UIImage(named:"team1"), UIImage(named:"team2"), UIImage(named:"team3")]
     @IBOutlet weak var collectionViewA: UICollectionView!
@@ -51,9 +52,9 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
         if collectionView == self.collectionViewA {
             //let data = data[indexPath.row]
             let cellA = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
-            cellA.imageA.image = imageArrayA[indexPath.row]
-            //cellA.imageA.kf.indicatorType = .activity
-            //cellA.imageA.kf.setImage(with: URL(string: "https://images7.alphacoders.com/472/thumb-1920-472347.jpg"), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
+            //cellA.imageA.image = imageArrayA[indexPath.row]
+            cellA.imageA.kf.indicatorType = .activity
+            cellA.imageA.kf.setImage(with: URL(string: imageArrayA[0]), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
             //cellA.
             return cellA
         } else if collectionView == self.collectionViewB {
