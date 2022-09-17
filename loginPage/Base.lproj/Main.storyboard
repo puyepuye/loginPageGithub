@@ -938,8 +938,8 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JvD-4n-5aF">
                                 <rect key="frame" x="0.0" y="424" width="375" height="472"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2jy-xO-YgQ">
-                                        <rect key="frame" x="20" y="55" width="355" height="130"/>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2jy-xO-YgQ">
+                                        <rect key="frame" x="20" y="55" width="372" height="130"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1209,7 +1209,7 @@
                                     <constraint firstAttribute="height" constant="31" id="hou-Y2-VXh"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Online">
+                                <buttonConfiguration key="configuration" style="filled" title=" Online">
                                     <fontDescription key="titleFontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                     <color key="baseBackgroundColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
@@ -1313,16 +1313,41 @@
                                     <constraint firstAttribute="width" constant="6" id="pDc-6A-E56"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWj-7c-FpE">
+                                <rect key="frame" x="15" y="50" width="40" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="q8w-Rc-29A"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                    <fontDescription key="titleFontDescription" name="Poppins-Regular" family="Poppins" pointSize="35"/>
+                                    <color key="baseForegroundColor" red="0.95686274510000002" green="0.95294117649999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYy-Ms-PVP">
+                                <rect key="frame" x="331" y="71" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="G4l-iF-wQa"/>
+                                    <constraint firstAttribute="height" constant="20" id="PU3-fv-G5v"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="settingButton"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VAE-JR-jge"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="JvD-4n-5aF" firstAttribute="leading" secondItem="VAE-JR-jge" secondAttribute="leading" id="2gS-ge-KLb"/>
+                            <constraint firstItem="YWj-7c-FpE" firstAttribute="top" secondItem="VAE-JR-jge" secondAttribute="top" constant="6" id="2km-Gq-Ow9"/>
+                            <constraint firstItem="yYy-Ms-PVP" firstAttribute="top" secondItem="VAE-JR-jge" secondAttribute="top" constant="27" id="3Ct-R8-csV"/>
                             <constraint firstItem="OEe-EW-QaD" firstAttribute="top" secondItem="VAE-JR-jge" secondAttribute="top" constant="32" id="5gd-fU-9wP"/>
                             <constraint firstItem="Ko1-Ze-QHp" firstAttribute="leading" secondItem="VAE-JR-jge" secondAttribute="leading" constant="147" id="6xZ-aA-C6i"/>
                             <constraint firstItem="5WW-4U-w01" firstAttribute="leading" secondItem="VAE-JR-jge" secondAttribute="leading" constant="49" id="6yy-qb-fRR"/>
                             <constraint firstItem="ec4-Up-Hlb" firstAttribute="leading" secondItem="VAE-JR-jge" secondAttribute="leading" id="7XC-tO-ZxS"/>
                             <constraint firstItem="DJ3-JP-Jm1" firstAttribute="leading" secondItem="VAE-JR-jge" secondAttribute="leading" constant="51" id="8Ew-Sm-ROg"/>
+                            <constraint firstItem="YWj-7c-FpE" firstAttribute="leading" secondItem="VAE-JR-jge" secondAttribute="leading" constant="15" id="9I3-RQ-kdU"/>
                             <constraint firstAttribute="bottom" secondItem="JvD-4n-5aF" secondAttribute="bottom" id="Bnb-di-t3M"/>
                             <constraint firstItem="Ko1-Ze-QHp" firstAttribute="top" secondItem="j3E-Ct-k6K" secondAttribute="bottom" constant="17" id="DXR-P8-5xD"/>
                             <constraint firstItem="j3E-Ct-k6K" firstAttribute="leading" secondItem="VAE-JR-jge" secondAttribute="leading" constant="9" id="IIl-2q-DRE"/>
@@ -1337,6 +1362,7 @@
                             <constraint firstItem="VAE-JR-jge" firstAttribute="trailing" secondItem="OEe-EW-QaD" secondAttribute="trailing" constant="132" id="UP6-1S-3wS"/>
                             <constraint firstItem="JvD-4n-5aF" firstAttribute="trailing" secondItem="VAE-JR-jge" secondAttribute="trailing" id="UUZ-lu-jjM"/>
                             <constraint firstItem="OEe-EW-QaD" firstAttribute="leading" secondItem="VAE-JR-jge" secondAttribute="leading" constant="132" id="Wlo-ZH-pmN"/>
+                            <constraint firstItem="yYy-Ms-PVP" firstAttribute="top" secondItem="VAE-JR-jge" secondAttribute="top" constant="27" id="X45-e6-DDK"/>
                             <constraint firstItem="x6C-kG-WRI" firstAttribute="top" secondItem="VAE-JR-jge" secondAttribute="top" constant="190" id="Y3n-xO-bBF"/>
                             <constraint firstItem="VAE-JR-jge" firstAttribute="trailing" secondItem="79V-l8-8xo" secondAttribute="trailing" constant="50" id="Zg2-O8-H1M"/>
                             <constraint firstItem="VAE-JR-jge" firstAttribute="trailing" secondItem="qTA-fh-Sjo" secondAttribute="trailing" constant="33" id="bpG-wQ-Hyd"/>
@@ -1348,6 +1374,7 @@
                             <constraint firstItem="VAE-JR-jge" firstAttribute="trailing" secondItem="j3E-Ct-k6K" secondAttribute="trailing" constant="9" id="meP-Qj-5ZJ"/>
                             <constraint firstItem="HQn-yk-44Y" firstAttribute="top" secondItem="VAE-JR-jge" secondAttribute="top" constant="190" id="mpY-R3-wmF"/>
                             <constraint firstItem="qTA-fh-Sjo" firstAttribute="top" secondItem="79V-l8-8xo" secondAttribute="bottom" id="n3p-cx-010"/>
+                            <constraint firstItem="VAE-JR-jge" firstAttribute="trailing" secondItem="yYy-Ms-PVP" secondAttribute="trailing" constant="24" id="ncz-iq-8pg"/>
                             <constraint firstItem="j3E-Ct-k6K" firstAttribute="top" secondItem="VAE-JR-jge" secondAttribute="top" constant="230" id="o9L-Tm-AkR"/>
                             <constraint firstItem="ec4-Up-Hlb" firstAttribute="top" secondItem="VAE-JR-jge" secondAttribute="top" constant="253" id="r0F-O6-T0g"/>
                             <constraint firstItem="5WW-4U-w01" firstAttribute="top" secondItem="DJ3-JP-Jm1" secondAttribute="bottom" id="tK7-zW-PTc"/>
@@ -1355,10 +1382,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="achievementLabel" destination="QtZ-CI-wgQ" id="eJQ-JF-Xdh"/>
                         <outlet property="bigView" destination="JvD-4n-5aF" id="6f4-Rz-Te0"/>
                         <outlet property="collectionViewA" destination="2jy-xO-YgQ" id="VuP-Gu-mGi"/>
                         <outlet property="collectionViewB" destination="2ZQ-Bj-oEF" id="QLm-qr-XkB"/>
                         <outlet property="collectionViewC" destination="zkw-Uk-p8j" id="JHP-fw-lQW"/>
+                        <outlet property="teamLabel" destination="Yog-75-u25" id="UxZ-Bb-iVc"/>
                         <outlet property="yellowButton" destination="r0U-id-oWN" id="UpZ-ze-9wh"/>
                     </connections>
                 </viewController>
@@ -1561,6 +1590,7 @@
         <image name="heartButton" width="32" height="32"/>
         <image name="ic-eye" width="16" height="16"/>
         <image name="pink" width="428" height="713"/>
+        <image name="settingButton" width="513" height="513"/>
         <image name="whiteProfile" width="16" height="16"/>
         <image name="woman2" width="103" height="103"/>
         <image name="womanSmile" width="165" height="165"/>

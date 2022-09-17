@@ -10,15 +10,24 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
     //var imageArrayA = ["https://images7.alphacoders.com/472/thumb-1920-472347.jpg", URL(string: "https://www.pbs.org/wnet/nature/files`/2021/05/frog-1280x720.png"), URL(string: "https://images7.alphacoders.com/472/thumb-1920-472347.jpg"), URL(string: "https://images7.alphacoders.com/472/thumb-1920-472347.jpg")]
     var imageArrayA = ["https://m.media-amazon.com/images/M/MV5BNzU2YTY2OTgtZGZjZi00MTAyLThlYjUtMWM5ZmYzOGEyOWJhXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg","https://i.kym-cdn.com/photos/images/newsfeed/001/258/706/739.jpg","https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/VALportrait_1200x1600-74261a10f40a6a5015f069ddb7aa910c", "https://www.nintendo.com/th/switch/aabp/img/hero_sp.jpg"]
     //var imageArrayB = [UIImage(named:"achievement1"), UIImage(named:"achievement2"), UIImage(named:"achievement1"),UIImage(named:"achievement2")]
-    var imageArrayB = ["https://yt3.ggpht.com/ytc/AMLnZu-kHkoYc0zzCtzi0yhaJzMw3W3vOG8OdwbSzW45=s88-c-k-c0x00ffffff-no-rj","https://yt3.ggpht.com/eLCADxKBRj3JGsifnxitZwfsbeV3DDlS3r8SzN5QPT2juw0fTV34T09vIZWfEF3D4JmV2z6hZA=s88-c-k-c0x00ffffff-no-rj","https://yt3.ggpht.com/ytc/AMLnZu-2pyUTWSFy7qziSCwjwcWKAoPvepcJBF803QKDog=s88-c-k-c0x00ffffff-no-rj","https://yt3.ggpht.com/1v-BhXzff57VaNA2WgNunxh1ssF3y4PE4bvjEVRaC4qIx-xuRW23dWBuI0sbCt0HeYJEh_EsGSc=s88-c-k-c0x00ffffff-no-rj", "https://yt3.ggpht.com/ytc/AMLnZu9cuk45yBHSCsbzQzheKZ5YPWUOFD6xO9EH2_aGow=s88-c-k-c0x00ffffff-no-rj"]
+    //badge
+    var imageArrayB = ["https://www.pngmart.com/files/9/Award-Badge-PNG-Image.png","https://w7.pngwing.com/pngs/535/154/png-transparent-badge-badge-with-wings-green-logo-shield-badges-and-labels.png"]
     //var imageArrayC = [UIImage(named:"team1"), UIImage(named:"team2"), UIImage(named:"team3"), UIImage(named:"team4"), UIImage(named:"team5"), UIImage(named:"team1"), UIImage(named:"team2"), UIImage(named:"team3")]
     var imageArrayC = ["https://m.media-amazon.com/images/M/MV5BNzU2YTY2OTgtZGZjZi00MTAyLThlYjUtMWM5ZmYzOGEyOWJhXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg","https://i.kym-cdn.com/photos/images/newsfeed/001/258/706/739.jpg","https://yt3.ggpht.com/1v-BhXzff57VaNA2WgNunxh1ssF3y4PE4bvjEVRaC4qIx-xuRW23dWBuI0sbCt0HeYJEh_EsGSc=s88-c-k-c0x00ffffff-no-rj", "https://yt3.ggpht.com/ytc/AMLnZu9cuk45yBHSCsbzQzheKZ5YPWUOFD6xO9EH2_aGow=s88-c-k-c0x00ffffff-no-rj"]
+
+    
     @IBOutlet weak var collectionViewA: UICollectionView!
     @IBOutlet weak var collectionViewB: UICollectionView!
     @IBOutlet weak var collectionViewC: UICollectionView!
     @IBOutlet weak var bigView: UIView!
     @IBOutlet weak var yellowButton: UIButton!
-
+    @IBOutlet var achievementLabel: UILabel!
+    @IBOutlet var teamLabel: UILabel!
+    
+    //let length = imageArrayC.count
+    let numAchievements = "(7)"
+    var numTeams = "(4)"
+    
     
     
     override func viewDidLoad() {
@@ -40,8 +49,10 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
 
         bigView.layer.insertSublayer(gradient, at: 0)
         //regist
-        
         //yellowButton.layer.borderColor = UIColor.blue.cgColor
+        
+        self.achievementLabel.text = self.numAchievements
+        self.teamLabel.text = self.numTeams
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
          if collectionView == self.collectionViewA {
