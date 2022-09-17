@@ -6,16 +6,19 @@ struct Celldata {
     let backgroundImage: String
 }
 class RankingViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    //var imageArrayA = ["https://images7.alphacoders.com/472/thumb-1920-472347.jpg", URL(string: "https://www.pbs.org/wnet/nature/files/2021/05/frog-1280x720.png"), URL(string: "https://images7.alphacoders.com/472/thumb-1920-472347.jpg"), URL(string: "https://images7.alphacoders.com/472/thumb-1920-472347.jpg")]
-    var imageArrayA = ["https://www.kmids.ac.th/wp-content/uploads/2021/10/PR.jpg","https://images7.alphacoders.com/472/thumb-1920-472347.jpg","https://images7.alphacoders.com/472/thumb-1920-472347.jpg"]
-    var imageArrayB = [UIImage(named:"achievement1"), UIImage(named:"achievement2"), UIImage(named:"achievement1"),UIImage(named:"achievement2")]
-    var imageArrayC = [UIImage(named:"team1"), UIImage(named:"team2"), UIImage(named:"team3"), UIImage(named:"team4"), UIImage(named:"team5"), UIImage(named:"team1"), UIImage(named:"team2"), UIImage(named:"team3")]
+    //copy image address
+    //var imageArrayA = ["https://images7.alphacoders.com/472/thumb-1920-472347.jpg", URL(string: "https://www.pbs.org/wnet/nature/files`/2021/05/frog-1280x720.png"), URL(string: "https://images7.alphacoders.com/472/thumb-1920-472347.jpg"), URL(string: "https://images7.alphacoders.com/472/thumb-1920-472347.jpg")]
+    var imageArrayA = ["https://m.media-amazon.com/images/M/MV5BNzU2YTY2OTgtZGZjZi00MTAyLThlYjUtMWM5ZmYzOGEyOWJhXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg","https://i.kym-cdn.com/photos/images/newsfeed/001/258/706/739.jpg","https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/VALportrait_1200x1600-74261a10f40a6a5015f069ddb7aa910c", "https://www.nintendo.com/th/switch/aabp/img/hero_sp.jpg"]
+    //var imageArrayB = [UIImage(named:"achievement1"), UIImage(named:"achievement2"), UIImage(named:"achievement1"),UIImage(named:"achievement2")]
+    var imageArrayB = ["https://yt3.ggpht.com/ytc/AMLnZu-kHkoYc0zzCtzi0yhaJzMw3W3vOG8OdwbSzW45=s88-c-k-c0x00ffffff-no-rj","https://yt3.ggpht.com/eLCADxKBRj3JGsifnxitZwfsbeV3DDlS3r8SzN5QPT2juw0fTV34T09vIZWfEF3D4JmV2z6hZA=s88-c-k-c0x00ffffff-no-rj","https://yt3.ggpht.com/ytc/AMLnZu-2pyUTWSFy7qziSCwjwcWKAoPvepcJBF803QKDog=s88-c-k-c0x00ffffff-no-rj","https://yt3.ggpht.com/1v-BhXzff57VaNA2WgNunxh1ssF3y4PE4bvjEVRaC4qIx-xuRW23dWBuI0sbCt0HeYJEh_EsGSc=s88-c-k-c0x00ffffff-no-rj", "https://yt3.ggpht.com/ytc/AMLnZu9cuk45yBHSCsbzQzheKZ5YPWUOFD6xO9EH2_aGow=s88-c-k-c0x00ffffff-no-rj"]
+    //var imageArrayC = [UIImage(named:"team1"), UIImage(named:"team2"), UIImage(named:"team3"), UIImage(named:"team4"), UIImage(named:"team5"), UIImage(named:"team1"), UIImage(named:"team2"), UIImage(named:"team3")]
+    var imageArrayC = ["https://m.media-amazon.com/images/M/MV5BNzU2YTY2OTgtZGZjZi00MTAyLThlYjUtMWM5ZmYzOGEyOWJhXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg","https://i.kym-cdn.com/photos/images/newsfeed/001/258/706/739.jpg","https://yt3.ggpht.com/1v-BhXzff57VaNA2WgNunxh1ssF3y4PE4bvjEVRaC4qIx-xuRW23dWBuI0sbCt0HeYJEh_EsGSc=s88-c-k-c0x00ffffff-no-rj", "https://yt3.ggpht.com/ytc/AMLnZu9cuk45yBHSCsbzQzheKZ5YPWUOFD6xO9EH2_aGow=s88-c-k-c0x00ffffff-no-rj"]
     @IBOutlet weak var collectionViewA: UICollectionView!
     @IBOutlet weak var collectionViewB: UICollectionView!
     @IBOutlet weak var collectionViewC: UICollectionView!
     @IBOutlet weak var bigView: UIView!
     @IBOutlet weak var yellowButton: UIButton!
+
     
     
     override func viewDidLoad() {
@@ -26,10 +29,11 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
         collectionViewB.dataSource = self
         collectionViewC.delegate = self
         collectionViewC.dataSource = self
+        //button down color
         
         //bigView.backgroundColor = UIColor.black
         //display
-        
+        yellowButton.layer.borderColor = CGColor.init(red: 255, green: 255, blue: 255, alpha: 1.0)
         let gradient = CAGradientLayer()
         gradient.frame = view.bounds
         gradient.colors = [UIColor.black.cgColor, UIColor.darkGray.cgColor]
@@ -54,16 +58,20 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
             let cellA = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
             //cellA.imageA.image = imageArrayA[indexPath.row]
             cellA.imageA.kf.indicatorType = .activity
-            cellA.imageA.kf.setImage(with: URL(string: imageArrayA[0]), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
+            cellA.imageA.kf.setImage(with: URL(string: imageArrayA[indexPath.row]), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
             //cellA.
             return cellA
         } else if collectionView == self.collectionViewB {
             let cellB = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
-            cellB.imageB.image = imageArrayB[indexPath.row]
+            cellB.imageB.kf.indicatorType = .activity
+            cellB.imageB.kf.setImage(with: URL(string: imageArrayB[indexPath.row]), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
+            //cellB.imageB.image = imageArrayB[indexPath.row]
             return cellB
         } else {
             let cellC = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
-            cellC.imageC.image = imageArrayC[indexPath.row]
+            //cellC.imageC.image = imageArrayC[indexPath.row]
+            cellC.imageC.kf.indicatorType = .activity
+            cellC.imageC.kf.setImage(with: URL(string: imageArrayC[indexPath.row]), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
             return cellC
         }
     }
