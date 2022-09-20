@@ -12,6 +12,8 @@ class LiveCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var image3: UIImageView!
     @IBOutlet weak var image2label: UILabel!
+    @IBOutlet weak var numberofView: UILabel!
+    @IBOutlet weak var numberofView2: UILabel!
 }
 //
 //  CollectionViewCell.swift
