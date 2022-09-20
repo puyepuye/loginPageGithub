@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P8P-BD-8Ht">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xcJ-7w-eXX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -1387,6 +1387,8 @@
                         <outlet property="collectionViewA" destination="2jy-xO-YgQ" id="VuP-Gu-mGi"/>
                         <outlet property="collectionViewB" destination="2ZQ-Bj-oEF" id="QLm-qr-XkB"/>
                         <outlet property="collectionViewC" destination="zkw-Uk-p8j" id="JHP-fw-lQW"/>
+                        <outlet property="numAchievemtn" destination="QtZ-CI-wgQ" id="U0m-F0-j8I"/>
+                        <outlet property="numberofTeams" destination="Yog-75-u25" id="btu-Ga-QSZ"/>
                         <outlet property="teamLabel" destination="Yog-75-u25" id="UxZ-Bb-iVc"/>
                         <outlet property="yellowButton" destination="r0U-id-oWN" id="UpZ-ze-9wh"/>
                     </connections>

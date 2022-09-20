@@ -24,9 +24,14 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet var achievementLabel: UILabel!
     @IBOutlet var teamLabel: UILabel!
     
+    @IBOutlet var numAchievemtn: UILabel!
+    @IBOutlet var numberofTeams: UILabel!
+
+    
     //let length = imageArrayC.count
+    /*
     let numAchievements = "(7)"
-    var numTeams = "(4)"
+    var numTeams = "(4)"*/
     
     
     
@@ -51,8 +56,11 @@ class RankingViewController: UIViewController, UICollectionViewDataSource, UICol
         //regist
         //yellowButton.layer.borderColor = UIColor.blue.cgColor
         
-        self.achievementLabel.text = self.numAchievements
-        self.teamLabel.text = self.numTeams
+        self.numAchievemtn.text = "(\(imageArrayB.count))"
+        self.numberofTeams.text = "(\(imageArrayC.count))"
+        
+
+        
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
          if collectionView == self.collectionViewA {
