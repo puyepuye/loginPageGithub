@@ -17,6 +17,8 @@
 		0B3A6AF5288887CD0081F4D8 /* loginPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AF4288887CD0081F4D8 /* loginPageUITests.swift */; };
 		0B3A6AF7288887CD0081F4D8 /* loginPageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AF6288887CD0081F4D8 /* loginPageUITestsLaunchTests.swift */; };
 		0B4205CC28D34A2C008F3850 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0B4205CB28D34A2C008F3850 /* Kingfisher */; };
+		0BAE568628E1915A00138523 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAE568528E1915A00138523 /* CommentsViewController.swift */; };
+		0BAE568828E243F000138523 /* CommentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAE568728E243F000138523 /* CommentsCollectionViewCell.swift */; };
 		0BC6F19B28ACC88F004917AB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6F19A28ACC88F004917AB /* CustomTableViewCell.swift */; };
 		0BC6F19D28ACCE8A004917AB /* StreamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6F19C28ACCE8A004917AB /* StreamingViewController.swift */; };
 		0BCF2498289D155E00CD99B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A6AD3288887CC0081F4D8 /* AppDelegate.swift */; };
@@ -78,6 +80,8 @@
 		0B3A6AF0288887CD0081F4D8 /* loginPageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginPageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3A6AF4288887CD0081F4D8 /* loginPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageUITests.swift; sourceTree = "<group>"; };
 		0B3A6AF6288887CD0081F4D8 /* loginPageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0BAE568528E1915A00138523 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		0BAE568728E243F000138523 /* CommentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCollectionViewCell.swift; sourceTree = "<group>"; };
 		0BC6F19A28ACC88F004917AB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		0BC6F19C28ACCE8A004917AB /* StreamingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingViewController.swift; sourceTree = "<group>"; };
 		0BCFAEDF28B2B12F00218CB5 /* Sw-Proxima-Nova.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sw-Proxima-Nova.otf"; sourceTree = "<group>"; };
@@ -178,7 +182,9 @@
 				0BF2A3F328CEE10D00BDA84C /* LiveCollectionViewCell.swift */,
 				0BF2A3EF28CECFC500BDA84C /* CollectionViewCell.swift */,
 				0B3A6ADC288887CC0081F4D8 /* Assets.xcassets */,
+				0BAE568728E243F000138523 /* CommentsCollectionViewCell.swift */,
 				0B3A6AD9288887CC0081F4D8 /* Main.storyboard */,
+				0BAE568528E1915A00138523 /* CommentsViewController.swift */,
 				0B3A6ADE288887CC0081F4D8 /* LaunchScreen.storyboard */,
 				0B3A6AE1288887CC0081F4D8 /* Info.plist */,
 				0BC6F19A28ACC88F004917AB /* CustomTableViewCell.swift */,
@@ -508,9 +514,11 @@
 			files = (
 				0BF3D32428A0376B0069CD28 /* SignUpViewController.swift in Sources */,
 				0BC6F19D28ACCE8A004917AB /* StreamingViewController.swift in Sources */,
+				0BAE568628E1915A00138523 /* CommentsViewController.swift in Sources */,
 				0B1603EF28A3BC42008B6508 /* ResponseViewController.swift in Sources */,
 				0BF2A3ED28CE10FC00BDA84C /* helper.swift in Sources */,
 				0BC6F19B28ACC88F004917AB /* CustomTableViewCell.swift in Sources */,
+				0BAE568828E243F000138523 /* CommentsCollectionViewCell.swift in Sources */,
 				0BF2A3F428CEE10D00BDA84C /* LiveCollectionViewCell.swift in Sources */,
 				0BE2AECD289CB92200827A79 /* LoginViewController.swift in Sources */,
 				0B3A6AD8288887CC0081F4D8 /* StartViewController.swift in Sources */,

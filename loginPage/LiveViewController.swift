@@ -32,10 +32,15 @@ class LiveViewController: UIViewController, UICollectionViewDataSource, UICollec
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         collectionView1.delegate = self
         collectionView1.dataSource = self
+        
+        let gradient = CAGradientLayer()
+        gradient.frame = view.bounds
+        gradient.colors = [UIColor.black.cgColor, UIColor.darkGray.cgColor]
+
         self.seperatorView.backgroundColor = UIColorFromHex(rgbValue: 0x505051,alpha: 1)
         
         searchView.layer.borderWidth = 1
-        searchView.layer.borderColor = UIColor.white.cgColor
+        searchView.layer.borderColor = UIColor.systemYellow.cgColor
         /*
         image1numView.layer.cornerRadius = 25
         image1numView.layer.backgroundColor = CGColor(red: (51/255.0), green: (51/255.0), blue: (51/255.0), alpha: 0.4)*/

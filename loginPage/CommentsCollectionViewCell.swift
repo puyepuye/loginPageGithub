@@ -9,4 +9,8 @@ import UIKit
 
 class CommentsCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet var commentText: UILabel!
+    @IBOutlet var commentName: UILabel!
+    @IBOutlet var commentProfile: UIImageView!
+    
 }
